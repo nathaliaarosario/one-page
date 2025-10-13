@@ -2,7 +2,7 @@
 
 
 # Confeitaria Arcanjo
-Site de divulgação de uma doceria atravez de um projeto de criação de um site One-Page
+Site de divulgação de uma doceria atraves de um projeto de criação de um site One-Page
 
 ## Autor
 Nathalia Alves Rosário
