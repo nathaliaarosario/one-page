@@ -1,0 +1,65 @@
+/* Folha de estilo do site Confeitaria Arcanjo
+@autor Nathalia Alves Rosário */
+
+/* Layout *********************************** */
+
+/* Variáveis */
+:root {
+    --marrom: #402706;
+    --marromEscuro: #362104;
+    --marromMuitoEscuro: #221708;
+    --marromBemEscuro: #150e04;
+    --cinza: #ebe7e7;
+    --branco: #ffffff;
+    --preto: #000000;
+    --dourado: #5c430f;
+}
+
+/* CSS Reset (para padronizar os diversos tipos de navegadores) */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Fim - Layout ***************************** */
+
+
+/* Smartphone portrait ********************** */
+
+
+/* Fim - Smartphone portrait ********************** */
+
+
+/* Smartphone landscape *************************** */
+@media (min-width: 576px) {}
+
+/* Fim - Smartphone landscape ********************* */
+
+
+/* Tablet portrait********************************* */
+
+@media (min-width: 768px) {}
+
+/* Fim -Tablet portrait********************************* */
+
+
+/* Tablet landscape ************************************ */
+@media (min-width: 992px) {}
+
+/* Fim - Tablet landscape **************************** */
+
+/* Notebook / PC - HD ******************************* */
+@media (min-width: 1200px) {}
+
+/* Fim - Notebook / PC - HD ************************* */
+
+
+/* Notebook / PC / TV - Full HD ou 4K *************** */
+@media (min-width: 1400px) {}
+
+/* Fim - Notebook / PC / TV - Full HD ou 4K ******* */
