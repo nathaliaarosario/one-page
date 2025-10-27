@@ -26,17 +26,98 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.container {
+    display: flex;
+}
+
+
 /* Fim - Layout ***************************** */
 
 
 /* Smartphone portrait ********************** */
 
+/* Cabeçalho */
+header {
+    height: 65px;
+    background-color: var(--marrom);
+}
+
+.logo img {
+    width: 128px;
+    height: 128px;
+}
+
+/* esconder um elemento */
+#check {
+    display: none;
+}
+
+label {
+    font-size: 2rem;
+
+    /* para deixar o botão com transparencia */
+    color: rgba(92, 67, 15, 0.75);
+
+    /* deixa o elemneto fixo pra sempre */
+    position: fixed;
+
+    /* colocar a posição em que ele vai ficar fixo */
+    top: 5px;
+    right: 15px;
+}
+
+nav ul {
+    /* como remover as bolinhas da lista */
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(36, 21, 04, 0.75);
+    width: 65%;
+    /* definir para o tamanho da tela */
+    right: -65%;
+    /* ajustar o width */
+    /* transição */
+    transition: all 0.5s;
+}
+
+/* ação para a caixa check */
+/* quando selecionada mudar ul */
+#check:checked~ul {
+    right: 0px;
+}
+
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--marromBemEscuro);
+    text-align: right;
+}
+
+nav ul li a {
+    /* remover o sublinhado de links(texto)*/
+    text-decoration: none;
+    color: var(--dourado);
+
+}
 
 /* Fim - Smartphone portrait ********************** */
 
 
 /* Smartphone landscape *************************** */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+    /* cabeçalho */
+    nav ul {
+        width: 40%;
+        /* definir para o tamanho da tela */
+        right: -40%;
+        /* ajustar o width */
+        /* transição */
+        transition: all 0.5s;
+    }
+
+}
 
 /* Fim - Smartphone landscape ********************* */
 
@@ -44,6 +125,7 @@ body {
 /* Tablet portrait********************************* */
 
 @media (min-width: 768px) {}
+
 
 /* Fim -Tablet portrait********************************* */
 
@@ -53,8 +135,42 @@ body {
 
 /* Fim - Tablet landscape **************************** */
 
+
 /* Notebook / PC - HD ******************************* */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    /* cabeçlho */
+    header {
+        height: 100px;
+    }
+
+    .logo img {
+        width: 194px;
+        height: 194px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        /* desafixar um elemento que foi fixado (padrão)*/
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    /* cursou erm cima do link (só funciona no computador) */
+    nav ul li a:hover {
+        color: var(--preto);
+    }
+}
 
 /* Fim - Notebook / PC - HD ************************* */
 
