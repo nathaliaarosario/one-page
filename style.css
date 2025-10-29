@@ -5,14 +5,17 @@
 
 /* Variáveis */
 :root {
-    --marrom: #402706;
+    --marrom: #492900;
     --marromEscuro: #362104;
     --marromMuitoEscuro: #221708;
     --marromBemEscuro: #150e04;
     --cinza: #ebe7e7;
     --branco: #ffffff;
     --preto: #000000;
-    --dourado: #5c430f;
+    --dourado: #75530b;
+    --beje: #836750;
+    --bejeEscuro: #4b2a00;
+    --amareloTitulo: #b58336;
 }
 
 /* CSS Reset (para padronizar os diversos tipos de navegadores) */
@@ -28,8 +31,21 @@ body {
 
 .container {
     display: flex;
+    /* centralizar o container */
+    margin: 0 auto;
 }
 
+/* Botão */
+.btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--bejeEscuro);
+    padding: 9px 20px;
+    color: var(--branco);
+    border-radius: 25px;
+    border: 2px solid var(--branco);
+}
 
 /* Fim - Layout ***************************** */
 
@@ -39,7 +55,7 @@ body {
 /* Cabeçalho */
 header {
     height: 65px;
-    background-color: var(--marrom);
+    background-color: var(--cinza);
 }
 
 .logo img {
@@ -72,10 +88,10 @@ nav ul {
     height: 100vh;
     position: fixed;
     top: 60px;
-    background-color: rgba(36, 21, 04, 0.75);
-    width: 65%;
+    background-color: rgba(235, 231, 231, 0.75);
+    width: 55%;
     /* definir para o tamanho da tela */
-    right: -65%;
+    right: -55%;
     /* ajustar o width */
     /* transição */
     transition: all 0.5s;
@@ -90,7 +106,7 @@ nav ul {
 
 nav ul li {
     padding: 20px;
-    border-bottom: 1px solid var(--marromBemEscuro);
+    border-bottom: 1px solid var(--dourado);
     text-align: right;
 }
 
@@ -101,11 +117,57 @@ nav ul li a {
 
 }
 
+/* principal */
+main {
+    /* 50% da altura da tela */
+    height: 70vh;
+    background:
+        linear-gradient(rgba(44, 28, 7, 0.53), rgb(53, 31, 0.5)),
+        /* camada escura */
+        url(img/lista_brigadeiro.jpg);
+    /* minha imagem */
+    background-size: cover;
+    background-position: center;
+    /* cor do texto em cima da imagem */
+    color: #fff;
+}
+
+main .container {
+    /* relativo ao main */
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* centraliza no meio do banner */
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-family: 'Trajan Color';
+    color: var(--amareloTitulo);
+    font-size: 0.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: var(--branco);
+    font-size: 5rem; 
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
 /* Fim - Smartphone portrait ********************** */
 
 
 /* Smartphone landscape *************************** */
 @media (min-width: 576px) {
+
+    /* layout */
+    .container {
+        max-width: 540px;
+    }
 
     /* cabeçalho */
     nav ul {
@@ -119,19 +181,55 @@ nav ul li a {
 
 }
 
+/* principal */
+main {
+    height: 80vh;
+}
+
+main h1 {
+    font-size: 2.75rem;
+}
+
+main h2 {
+    font-size: 2.3rem;
+}
+
+
+
 /* Fim - Smartphone landscape ********************* */
 
 
 /* Tablet portrait********************************* */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
 
+    /* layout */
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* principal */
+main h1 {
+    font-size: 3.9rem;
+}
+
+main h2 {
+    font-size: 3rem;
+}
 
 /* Fim -Tablet portrait********************************* */
 
 
 /* Tablet landscape ************************************ */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    /* layout */
+    .container {
+        max-width: 960px;
+    }
+}
+
 
 /* Fim - Tablet landscape **************************** */
 
@@ -139,14 +237,21 @@ nav ul li a {
 /* Notebook / PC - HD ******************************* */
 @media (min-width: 1200px) {
 
+    /* layout */
+    .container {
+        justify-content: space-between;
+        max-width: 1140px;
+
+    }
+
     /* cabeçlho */
     header {
         height: 100px;
     }
 
     .logo img {
-        width: 194px;
-        height: 194px;
+        width: 190px;
+        height: 190px;
     }
 
     label {
@@ -159,6 +264,8 @@ nav ul li a {
         width: 100%;
         height: auto;
         background-color: transparent;
+        margin-top: 20px;
+        margin-right: 10px;
     }
 
     nav ul li {
@@ -170,12 +277,32 @@ nav ul li a {
     nav ul li a:hover {
         color: var(--preto);
     }
+
+    main h1 {
+        font-size: 3.75rem;
+        margin-top: 5px;
+    }
+
+    main h2 {
+        font-size: 3rem;
+
+    }
 }
+
 
 /* Fim - Notebook / PC - HD ************************* */
 
 
 /* Notebook / PC / TV - Full HD ou 4K *************** */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    /* principal */
+    main h1 {
+        font-size: 3rem;
+    }
+}
 
 /* Fim - Notebook / PC / TV - Full HD ou 4K ******* */
