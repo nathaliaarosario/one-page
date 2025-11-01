@@ -15,7 +15,7 @@
     --dourado: #75530b;
     --beje: #836750;
     --bejeEscuro: #4b2a00;
-    --amareloTitulo: #b58336;
+    --amareloTitulo: #de9c38;
 }
 
 /* CSS Reset (para padronizar os diversos tipos de navegadores) */
@@ -44,7 +44,9 @@ body {
     padding: 9px 20px;
     color: var(--branco);
     border-radius: 25px;
-    border: 2px solid var(--branco);
+    border: 2px solid var(--amareloTitulo);
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
 }
 
 /* Fim - Layout ***************************** */
@@ -55,7 +57,7 @@ body {
 /* Cabeçalho */
 header {
     height: 65px;
-    background-color: var(--cinza);
+    background-color: var(--marrom);
 }
 
 .logo img {
@@ -88,7 +90,7 @@ nav ul {
     height: 100vh;
     position: fixed;
     top: 60px;
-    background-color: rgba(235, 231, 231, 0.75);
+    background-color: rgba(79, 49, 11, 0.85);
     width: 55%;
     /* definir para o tamanho da tela */
     right: -55%;
@@ -113,7 +115,7 @@ nav ul li {
 nav ul li a {
     /* remover o sublinhado de links(texto)*/
     text-decoration: none;
-    color: var(--dourado);
+    color: var(--amareloTitulo);
 
 }
 
@@ -140,22 +142,26 @@ main .container {
     /* centraliza no meio do banner */
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 main h1 {
     font-family: 'Trajan Color';
     color: var(--amareloTitulo);
-    font-size: 0.5rem;
+    font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 10px;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
+    font-family: 'Raleway';
     color: var(--branco);
-    font-size: 5rem; 
+    font-size: 1rem;
     font-weight: 200;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+
 }
 
 /* Fim - Smartphone portrait ********************** */
@@ -171,29 +177,34 @@ main h2 {
 
     /* cabeçalho */
     nav ul {
-        width: 40%;
+        width: 35%;
         /* definir para o tamanho da tela */
-        right: -40%;
+        right: -35%;
         /* ajustar o width */
         /* transição */
         transition: all 0.5s;
     }
 
-}
+    /* principal */
+    main {
+        height: 80vh;
+    }
 
-/* principal */
-main {
-    height: 80vh;
-}
+    main h1 {
+        margin-top: 10px;
+        font-size: 2rem;
+        text-align: center;
 
-main h1 {
-    font-size: 2.75rem;
-}
+    }
 
-main h2 {
-    font-size: 2.3rem;
-}
+    main h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        margin-top: 25px;
+        text-align: center;
+    }
 
+}
 
 
 /* Fim - Smartphone landscape ********************* */
@@ -203,19 +214,22 @@ main h2 {
 
 @media (min-width: 768px) {
 
+
     /* layout */
     .container {
         max-width: 720px;
+
     }
-}
 
-/* principal */
-main h1 {
-    font-size: 3.9rem;
-}
+    /* principal main */
+    main h1 {
+        font-size: 3.9rem;
+    }
 
-main h2 {
-    font-size: 3rem;
+    main h2 {
+        font-size: 2rem;
+        margin-bottom: 70px;
+    }
 }
 
 /* Fim -Tablet portrait********************************* */
@@ -278,15 +292,23 @@ main h2 {
         color: var(--preto);
     }
 
+
+    /* principol */
+    main {
+        height: 85vh;
+    }
+
     main h1 {
-        font-size: 3.75rem;
-        margin-top: 5px;
+        font-size: 8rem;
+        text-align: center;
     }
 
     main h2 {
-        font-size: 3rem;
-
+        font-size: 1.30rem;
+        text-align: center;
     }
+
+   
 }
 
 
