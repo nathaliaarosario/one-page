@@ -13,7 +13,7 @@
     --branco: #ffffff;
     --preto: #000000;
     --dourado: #75530b;
-    --beje: #836750;
+    --beje: #FECDA5;
     --bejeEscuro: #4b2a00;
     --amareloTitulo: #de9c38;
 }
@@ -74,7 +74,7 @@ label {
     font-size: 2rem;
 
     /* para deixar o botão com transparencia */
-    color: rgba(92, 67, 15, 0.75);
+    color: rgba(117, 83, 11, 0.75);
 
     /* deixa o elemneto fixo pra sempre */
     position: fixed;
@@ -157,11 +157,62 @@ main h1 {
 main h2 {
     font-family: 'Raleway';
     color: var(--branco);
-    font-size: 1rem;
+    font-size: 1.39rem;
     font-weight: 200;
     margin-top: 25px;
     margin-bottom: 80px;
 
+}
+
+/* Destaque */
+#destaque {
+    padding: 50px 10px;
+    background:
+        linear-gradient(rgba(44, 28, 7, 0.53), rgba(82, 46, 0, 0.7)),
+        /* camada escura */
+        url(img/destaque.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+
+    text-align: center;
+}
+
+#hero img {
+    width: 300px;
+    /* mudar o tamanho */
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.hero-text h2 {
+    font-family: 'Trajan Color';
+    color: var(--amareloTitulo);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: var(--branco)
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    /* separação de um topico para outro */
+    margin-top: 15px;
+    color: var(--branco);
+}
+
+.topic p {
+    margin-left: 15px
 }
 
 /* Fim - Smartphone portrait ********************** */
@@ -202,6 +253,34 @@ main h2 {
         margin-bottom: 30px;
         margin-top: 25px;
         text-align: center;
+    }
+
+    /* destaque */
+
+    /* identificador usa o (#) e quando é classe usa o (.)*/
+    #destaque {
+        padding: 50px 0px;
+    }
+
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero {
+        text-align: left;
+    }
+
+    #hero img {
+        width: 250px;
+        /* mudar o tamanho */
+        height: 250px;
+        margin: 0px 25px 0px 0px;
+    }
+
+    .topic {
+        /* esconder icones */
+        display: none;
     }
 
 }
@@ -299,16 +378,38 @@ main h2 {
     }
 
     main h1 {
-        font-size: 8rem;
+        font-size: 9rem;
         text-align: center;
     }
 
     main h2 {
-        font-size: 1.30rem;
+        font-size: 2rem;
         text-align: center;
     }
 
-   
+
+    /* destaque */
+
+    #destaque {
+        /* efeito paralax (a imagem não anda) */
+        background-attachment: fixed;
+    }
+
+    .hero img {
+        width: 400px;
+        height: 400px;
+
+
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .topic {
+        display: none;
+    }
+
 }
 
 
