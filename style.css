@@ -252,6 +252,19 @@ main h2 {
     font-size: 1.0rem;
 }
 
+/* cardapio */
+#cardarpio {
+    padding: 50px 10px;
+    background:
+        linear-gradient(rgba(43, 25, 1, 1), rgba(222, 156, 56, 0.5)),
+        /* camada escura */
+        url(img/destaque.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 
 
