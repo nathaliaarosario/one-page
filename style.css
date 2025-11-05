@@ -168,9 +168,10 @@ main h2 {
 #destaque {
     padding: 50px 10px;
     background:
-        linear-gradient(rgba(44, 28, 7, 0.53), rgba(82, 46, 0, 0.7)),
+        linear-gradient(rgba(43, 25, 1, 1), rgba(222, 156, 56, 0.5)),
         /* camada escura */
         url(img/destaque.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 
@@ -190,9 +191,11 @@ main h2 {
     /* mudar o tamanho */
     height: 300px;
     margin-bottom: 25px;
+
 }
 
 .hero-text h2 {
+    /* text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1); */
     font-family: 'Trajan Color';
     color: var(--amareloTitulo);
     font-size: 1.6rem;
@@ -200,6 +203,7 @@ main h2 {
 }
 
 .hero-text p {
+    /* text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1); */
     color: var(--branco)
 }
 
@@ -214,6 +218,42 @@ main h2 {
 .topic p {
     margin-left: 15px
 }
+
+/* sobre */
+#sobre {
+    padding: 50px 10px;
+    background-color: rgba(82, 46, 0, 1);
+}
+
+#sobre .container {
+    flex-direction: column;
+
+}
+
+#video iframe {
+    width: 355px;
+    height: 196px;
+    margin-top: 25px;
+
+
+
+}
+
+.sobre-text h2 {
+    color: #de9c38;
+    margin-top: 20px;
+    font-family: 'Trajan Color';
+    margin-bottom: 15px;
+}
+
+.sobre-text p {
+    /* font-family: 'Roboto', sans-serif; */
+    color: var(--branco);
+    font-size: 1.0rem;
+}
+
+
+
 
 /* Fim - Smartphone portrait ********************** */
 
@@ -283,6 +323,14 @@ main h2 {
         display: none;
     }
 
+    /* * sobre */
+
+    #video iframe {
+        width: 560px;
+        height: 315px;
+        margin-top: 25px;
+
+    }
 }
 
 
@@ -410,7 +458,25 @@ main h2 {
         display: none;
     }
 
+    /* * sobre */
+
+    #video iframe {
+        margin: 0px 0px 0px 50px;
+
+    }
+
+    #sobre .container {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .sobre-text h2 {
+        font-size: 2rem;
+
+    }
 }
+
 
 
 /* Fim - Notebook / PC - HD ************************* */
