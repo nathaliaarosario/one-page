@@ -235,8 +235,6 @@ main h2 {
     height: 196px;
     margin-top: 25px;
 
-
-
 }
 
 .sobre-text h2 {
@@ -253,7 +251,8 @@ main h2 {
 }
 
 /* cardapio */
-#cardarpio {
+
+#cardapio {
     padding: 50px 10px;
     background:
         linear-gradient(rgba(43, 25, 1, 1), rgba(222, 156, 56, 0.5)),
@@ -264,8 +263,36 @@ main h2 {
     background-position: center;
 }
 
+#cardapio .container {
+    flex-direction: column;
 
+}
 
+.cardapio-text h2 {
+    color: #de9c38;
+    margin-top: 20px;
+    font-family: 'Trajan Color';
+    margin-bottom: 15px;
+}
+
+.cardapio-text p {
+    /* font-family: 'Roboto', sans-serif; */
+    color: var(--branco);
+    font-size: 1.0rem;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--bejeEscuro);
+    padding: 9px 20px;
+    color: var(--branco);
+    border-radius: 25px;
+    border: 2px solid var(--amareloTitulo);
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
+}
 
 
 /* Fim - Smartphone portrait ********************** */
