@@ -491,6 +491,7 @@ main h2 {
     }
 
     .hero-text h2 {
+        line-height: 15px;
         font-size: 2rem;
     }
 
