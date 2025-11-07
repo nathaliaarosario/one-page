@@ -190,7 +190,7 @@ main h2 {
     width: 300px;
     /* mudar o tamanho */
     height: 300px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 
 }
 
@@ -219,6 +219,7 @@ main h2 {
     margin-left: 15px
 }
 
+
 /* sobre */
 #sobre {
     padding: 50px 10px;
@@ -233,31 +234,31 @@ main h2 {
 #video iframe {
     width: 355px;
     height: 196px;
-    margin-top: 25px;
+    /* margin-top: 5px; */
 
 }
 
 .sobre-text h2 {
     color: #de9c38;
-    margin-top: 20px;
+    margin-top: 5px;
     font-family: 'Trajan Color';
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .sobre-text p {
     /* font-family: 'Roboto', sans-serif; */
     color: var(--branco);
     font-size: 1.0rem;
+    line-height: 1.5;
 }
 
 /* cardapio */
-
 #cardapio {
+    height: 50vh;
     padding: 50px 10px;
     background:
-        linear-gradient(rgba(43, 25, 1, 1), rgba(222, 156, 56, 0.5)),
-        /* camada escura */
-        url(img/destaque.jpg);
+        linear-gradient(rgb(43, 25, 1), rgba(222, 156, 56, 0.404)), url(img/destaque.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -270,7 +271,6 @@ main h2 {
 
 .cardapio-text h2 {
     color: #de9c38;
-    margin-top: 20px;
     font-family: 'Trajan Color';
     margin-bottom: 15px;
 }
@@ -279,9 +279,11 @@ main h2 {
     /* font-family: 'Roboto', sans-serif; */
     color: var(--branco);
     font-size: 1.0rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
 
-.btn {
+.botão {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 700;
@@ -290,9 +292,19 @@ main h2 {
     color: var(--branco);
     border-radius: 25px;
     border: 2px solid var(--amareloTitulo);
-    align-items: center;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
+
+
 }
+
+#qrcode img {
+    display: none;
+}
+
+#cardapio span {
+    display: none;
+}
+
+
 
 
 /* Fim - Smartphone portrait ********************** */
@@ -339,6 +351,7 @@ main h2 {
 
     /* identificador usa o (#) e quando é classe usa o (.)*/
     #destaque {
+
         padding: 50px 0px;
     }
 
@@ -371,6 +384,22 @@ main h2 {
         margin-top: 25px;
 
     }
+
+    /* cardapio */
+    #qrcode img {
+        display: none;
+    }
+
+    #cardapio {
+        height: 80vh;
+    }
+
+    #cardapio span {
+        display: none;
+    }
+
+
+
 }
 
 
@@ -397,6 +426,54 @@ main h2 {
         font-size: 2rem;
         margin-bottom: 70px;
     }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    /* sobre */
+    .sobre-text h2 {
+        font-size: 2rem;
+    }
+
+    .sobre-text p {
+        font-size: 1.2rem;
+    }
+
+    /* cardapio */
+    #cardapio {
+        height: 35vh;
+    }
+
+    .cardapio-text h2 {
+        font-size: 2rem;
+    }
+
+    .cardapio-text p {
+        font-size: 1.2rem;
+    }
+
+    #qrcode img {
+        width: 25%;
+        height: auto;
+        display: none;
+    }
+
+    #cardapio .container {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    #cardapio span {
+        display: none;
+    }
+
+
 }
 
 /* Fim -Tablet portrait********************************* */
@@ -409,6 +486,12 @@ main h2 {
     .container {
         max-width: 960px;
     }
+
+    /* cardapio */
+    #cardapio span {
+        display: none;
+    }
+
 }
 
 
@@ -466,7 +549,7 @@ main h2 {
     }
 
     main h1 {
-        font-size: 9rem;
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -516,6 +599,36 @@ main h2 {
         font-size: 2rem;
 
     }
+
+    /* cardapio */
+    #cardapio {
+        height: 45vh;
+    }
+
+    #cardapio .container {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    #qrcode img {
+        width: 300px;
+        height: 300px;
+        display: inline;
+    }
+
+    .cardapio-text h2 {
+        font-size: 2rem;
+    }
+
+    .cardapio-text p {
+        font-size: 1.2rem;
+    }
+
+    #cardapio span {
+        display: inline;
+    }
+
 }
 
 
