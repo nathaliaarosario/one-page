@@ -49,6 +49,17 @@ body {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
 }
 
+/* Cartão */
+.card {
+    width: 343px;
+    height: 520px;
+    margin-top: 15px;
+    background-color: var(--marromEscuro);
+    border-radius: 25px;
+    margin-bottom: 15px;
+    border: 3px solid var(--marromMuitoEscuro);
+}
+
 /* Fim - Layout ***************************** */
 
 
@@ -303,6 +314,107 @@ main h2 {
 #cardapio span {
     display: none;
 }
+
+
+/* Cartões */
+#produto {
+    padding: 50px 0px;
+    background-color: rgba(82, 46, 0, 1);
+}
+
+#produto .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 2px 2px;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.597);
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    color: var(--branco);
+    /* margin-top: 15px 0px; */
+    margin-bottom: 15px;
+    text-shadow: 10px 0px 20px rgba(255, 255, 255, 0.797);
+    margin-top: 25px;
+}
+
+.card p {
+    color: var(--branco);
+    padding: 0px 10px 25px 10px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#produto .btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--bejeEscuro);
+    padding: 9px 20px;
+    color: var(--branco);
+    border-radius: 25px;
+    border: 2px solid var(--branco);
+    align-items: center;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.797);
+}
+
+/* endereço */
+#endereco {
+    background-color: var(--marromEscuro);
+}
+
+#endereco .container {
+    flex-direction: column;
+}
+
+#contatos img {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#contatos p {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: var(--branco);
+}
+
+#telefone img {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#telefone p {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: var(--branco);
+}
+
+#local img {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#local p {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: var(--branco);
+}
+
+#email img {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#email p {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: var(--branco);
+}
+
 
 
 
