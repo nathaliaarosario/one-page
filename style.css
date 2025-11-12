@@ -8,7 +8,7 @@
     --marrom: #492900;
     --marromEscuro: #362104;
     --marromMuitoEscuro: #221708;
-    --marromBemEscuro: #150e04;
+    --marromBemEscuro: #2c1b03;
     --cinza: #ebe7e7;
     --branco: #ffffff;
     --preto: #000000;
@@ -365,6 +365,7 @@ main h2 {
 /* endereço */
 #endereco {
     background-color: var(--marromEscuro);
+    padding: 50px 10px;
 }
 
 #endereco .container {
@@ -415,8 +416,27 @@ main h2 {
     color: var(--branco);
 }
 
+#local iframe {
+    display: none;
+}
 
+/* Rodapé */
+footer {
+    padding: 50px 0px;
+    background-color: var(--marromBemEscuro);
+    font-size: 0.875rem;
+    color: var(--branco);
+    text-align: center;
+}
 
+#copyright p {
+    align-items: center;
+    color: var(--branco);
+}
+
+#social {
+    margin-bottom: 25px;
+}
 
 
 /* Fim - Smartphone portrait ********************** */
@@ -510,7 +530,17 @@ main h2 {
         display: none;
     }
 
+    /* endereço */
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    /* Rodapé */
+    #social {
+        margin: 0;
+    }
 
 }
 
@@ -584,6 +614,8 @@ main h2 {
     #cardapio span {
         display: none;
     }
+
+
 
 
 }
@@ -741,7 +773,34 @@ main h2 {
         display: inline;
     }
 
+    /* Cartões */
+    #produto {
+        padding: 50px 0px;
+        background-color: rgba(82, 46, 0, 1);
+    }
+
+    #produto .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Contato */
+    #address .container {
+      flex-direction: column;
+    }
+
+    #address {
+        padding-top: 50px;
+    }
+
+    #local iframe {
+        display: inline;
+        align-items: left;
+        flex-direction: row;
+        align-items: center;
+    }
 }
+
 
 
 
