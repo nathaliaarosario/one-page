@@ -60,6 +60,25 @@ body {
     border: 3px solid var(--marromMuitoEscuro);
 }
 
+.card h2 {
+    font-size: 2rem;
+    color: #fcbe5c;
+    margin: 15px 0px;
+}
+
+.card p {
+    color: #ffffff;
+    font-family: 'Open Sans';
+    text-align: left;
+    padding: 0px 10px 30px 10px;
+}
+
+.Flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
 /* Fim - Layout ***************************** */
 
 
@@ -416,26 +435,34 @@ main h2 {
     color: var(--branco);
 }
 
-#local iframe {
+#googlemaps iframe {
     display: none;
 }
 
-/* Rodapé */
-footer {
-    padding: 50px 0px;
-    background-color: var(--marromBemEscuro);
-    font-size: 0.875rem;
-    color: var(--branco);
-    text-align: center;
-}
 
-#copyright p {
-    align-items: center;
+/* Rodapé */
+
+footer {
+    padding: 25px 10px;
+    background-color: var(--marromBemEscuro);
     color: var(--branco);
+    align-items: center;
 }
 
 #social {
     margin-bottom: 25px;
+}
+
+#copyright p {
+    text-decoration: none;
+    color: var(--marromBemEscuro);
+}
+
+/* botão de subir */
+#topo {
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
 }
 
 
@@ -530,17 +557,17 @@ footer {
         display: none;
     }
 
-    /* endereço */
-    footer .container {
+    /* rodapé */
+    .Flex5 {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    /* Rodapé */
     #social {
-        margin: 0;
+        margin-bottom: 0px;
     }
+
 
 }
 
@@ -616,7 +643,18 @@ footer {
     }
 
 
+    /* cartão */
+    #produto .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
+    /* rodapé */
+
+    #social {
+        margin-bottom: 10px;
+    }
 
 }
 
@@ -784,20 +822,25 @@ footer {
         align-items: center;
     }
 
-    /* Contato */
-    #address .container {
-      flex-direction: column;
-    }
+    /* endereço */
 
-    #address {
-        padding-top: 50px;
-    }
-
-    #local iframe {
+    #googlemaps iframe {
         display: inline;
-        align-items: left;
-        flex-direction: row;
-        align-items: center;
+        width: 350px;
+        height: 300px;
+    }
+
+    address .container {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    #endereco a {
+        display: none;
+    }
+
+    #local img {
+        display: inline;
     }
 }
 
