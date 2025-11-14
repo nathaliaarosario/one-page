@@ -439,6 +439,10 @@ main h2 {
     display: none;
 }
 
+#mapaicon {
+    display: none;
+}
+
 
 /* Rodapé */
 
@@ -839,11 +843,19 @@ footer {
         display: inline;
     }
 
-    #local {
+    #mapa{
+        /* width: 300px; */
+        /* display: block; */
         display: none;
     }
+
+    #local {
+        width: 300px;
+        display: block;
+    }
+
     #iconmapa {
-      display: inline;
+        display: inline;
     }
 }
 
