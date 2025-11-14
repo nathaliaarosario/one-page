@@ -830,17 +830,20 @@ footer {
         height: 300px;
     }
 
-    address .container {
+    #endereco .container {
         flex-direction: row-reverse;
         justify-content: space-around;
     }
 
-    #endereco a {
-        display: none;
+    #contatos a {
+        display: inline;
     }
 
-    #local img {
-        display: inline;
+    #local {
+        display: none;
+    }
+    #iconmapa {
+      display: inline;
     }
 }
 
