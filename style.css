@@ -458,8 +458,12 @@ footer {
 }
 
 #copyright p {
+    color: var(--branco);
+}
+/* linktree */
+#copyright a {
+    color: var(--dourado);
     text-decoration: none;
-    color: var(--marromBemEscuro);
 }
 
 /* botão de subir */
