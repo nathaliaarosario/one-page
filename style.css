@@ -439,8 +439,8 @@ main h2 {
     display: none;
 }
 
-#mapaicon {
-    display: none;
+#iconmapa {
+    display: inline;
 }
 
 
@@ -460,6 +460,7 @@ footer {
 #copyright p {
     color: var(--branco);
 }
+
 /* linktree */
 #copyright a {
     color: var(--dourado);
@@ -847,7 +848,7 @@ footer {
         display: inline;
     }
 
-    #mapa{
+    #mapa {
         /* width: 300px; */
         /* display: block; */
         display: none;
@@ -856,10 +857,6 @@ footer {
     #local {
         width: 300px;
         display: block;
-    }
-
-    #iconmapa {
-        display: inline;
     }
 }
 
