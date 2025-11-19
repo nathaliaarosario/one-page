@@ -463,7 +463,7 @@ footer {
 
 /* linktree */
 #copyright a {
-    color: var(--dourado);
+    color: var(--amareloTitulo);
     text-decoration: none;
 }
 
@@ -472,6 +472,7 @@ footer {
     position: fixed;
     bottom: 75px;
     right: 15px;
+
 }
 
 
