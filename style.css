@@ -79,6 +79,11 @@ body {
     align-items: center;
 }
 
+html {
+    /* Fazer transição na rolagem do menu */
+    scroll-behavior: smooth;
+}
+
 /* Fim - Layout ***************************** */
 
 
